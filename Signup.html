@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="sign-up-container">
+      <form action="" class="sign-up">
+        <h1>Sign up</h1>
+
+        <div class="form-container">
+          <div id="sign-up-input">
+            <label for="fullName">Full Name:</label>
+            <input
+              type="text"
+              id="fullName"
+              placeholder="Full Name"
+              required
+              pattern="[A-Za-z\s]+"
+            />
+            <label for="useName">Use Name:</label>
+            <input
+              type="text"
+              id="useName"
+              placeholder="Use Name"
+              minlength="5"
+              required
+            />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              minlength="5"
+              required
+            />
+            <label for="passWd">Password:</label>
+            <input
+              id="passWd"
+              type="password"
+              placeholder="Password"
+              minlength="8"
+              required
+            />
+            <label for="confirmPassswd">Confirm password:</label>
+            <input
+              id="confirmPassswd"
+              type="password"
+              placeholder="Confirm Password"
+              required
+              minlength="8"
+            />
+          </div>
+          <div id="sign-up-right">
+            <button type="submit" id="sign-up-btn">Sign up</button>
+            <p class="option">
+              already have an account?<a class="register" href="Signin.html">
+                Sign in</a
+              >
+            </p>
+            <h3>Or</h3>
+            <div class="social-icons">
+              <a
+                href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F&ec=GAlAwAE&hl=en&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1221372285%3A1721472153437238&ddm=0"
+                class="icon"
+                ><i class="fa-brands fa-google-plus-g"></i
+              ></a>
+              <a href="https://www.facebook.com/login/" class="icon"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://github.com/login" class="icon"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
+                class="icon"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
