@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="sign-in-container">
+      <form action="" class="sign-in">
+        <h1>Sign in</h1>
+        <div class="social-icons">
+          <a
+            href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F&ec=GAlAwAE&hl=en&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1221372285%3A1721472153437238&ddm=0"
+            class="icon"
+            ><i class="fa-brands fa-google-plus-g"></i
+          ></a>
+          <a href="https://www.facebook.com/login/" class="icon"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="https://github.com/login" class="icon"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
+            class="icon"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+        <span>or use your email password</span>
+
+        <label for="email">Email:</label>
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Email"
+          required
+          minlength="5"
+        />
+
+        <label for="passwd">Password:</label>
+        <input
+          type="password"
+          id="passwd"
+          placeholder="Password"
+          required
+          minlength="8"
+        />
+
+        <button type="submit">Sign in</button>
+        <a href="#">Forget Your Password?</a>
+        <p>
+          Don't have an account?<a class="register" href="Signup.html">
+            Sign up</a
+          >
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
